@@ -91,7 +91,7 @@ Fuel consumption comparison (lower is better):
 
 These results illustrate the gains from hybridization with the rule‑based EMS on standardized cycles.
 
-Author
+Author:
 Erfan Mousavi, Pratik Lande
 
 lil09heq@rhrk.uni-kl.de
