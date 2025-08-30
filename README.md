@@ -25,12 +25,8 @@ The controller uses inputs like gearbox speed `w_MGB`, acceleration `dw_MGB`, de
 ## 3) Repository layout
 
 model/      qss_hybrid_electric_vehicle_example.mdl
-controller/ controller_logic.m, controller_params.m
-optimizer/  optimizer.m
-scripts/    run_nedc.m, run_ftp75.m, plot_results.m
-figures/    PNGs only (controller design, NEDC/FTP-75 results)
-README.md   (this file)
-.gitignore  (excludes build junk + *.pdf)
+controller/ controller1.m, 
+optimizer/  optimalizer[1].m
 
 
 ## 4) Requirements
@@ -41,10 +37,8 @@ README.md   (this file)
 
 Add paths once per session:
 matlab
-addpath('controller','optimizer','scripts','model');
+addpath('controller','optimalizer','scripts','model');
 
-
----
 
 ## 5) Quick start
 
@@ -96,6 +90,7 @@ Fuel consumption comparison (lower is better):
 | FTP‑75        | 4.72            | 3.53           | 25.2%  |
 
 These results illustrate the gains from hybridization with the rule‑based EMS on standardized cycles.
+
 Author
 Erfan Mousavi, Pratik Lande
 
