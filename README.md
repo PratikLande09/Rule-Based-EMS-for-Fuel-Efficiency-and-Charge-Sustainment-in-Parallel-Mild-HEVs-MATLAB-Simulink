@@ -9,12 +9,6 @@ This project implements a **rule-based Energy Management System (EMS)** for a **
 - Approach: A rule-based controller computes a torque-split command `u` that decides how the engine (ICE) and electric motor (EM) share drive/brake torque.
 - **Validation:** Simulation on NEDC and FTP-75 with figures such as **battery charge vs. time** and mode timelines.
 
-## Reported fuel savings (illustrative from our runs)
-| Driving Cycle | ICE [L/100 km] | HEV [L/100 km] | Δ [%] |
-
-| NEDC | 4.929 | 3.716 | 24.6 |
-| FTP-75 | 4.72 | 3.53 | 25.2 |
-
 
 ## 2) How it works (high-level)
 
@@ -91,3 +85,18 @@ best = optimizer(p0, ranges, 'NEDC');   % or 'FTP75'
 best.params;   % tuned parameters
 best.score;    % lower is better
 best.trace;    % table of tried combos & scores
+
+## 8) #Results 
+
+Fuel consumption comparison (lower is better):
+
+| Driving Cycle | ICE [L/100 km] | HEV [L/100 km]  | Diff[%]|
+|---------------|-----------------|----------------|--------|
+| NEDC          | 4.929           | 3.716          | 24.6%  |
+| FTP‑75        | 4.72            | 3.53           | 25.2%  |
+
+These results illustrate the gains from hybridization with the rule‑based EMS on standardized cycles.
+Author
+Erfan Mousavi, Pratik Lande
+
+lil09heq@rhrk.uni-kl.de
